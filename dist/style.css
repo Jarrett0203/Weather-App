@@ -1,0 +1,31 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(images/background.jpg) center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+:root {
+    --dark_bg: rgba(0, 0, 0, 0.5);
+}
+
+.main {
+    display: flex;
+    height: 70vh;
+    width: 90vw;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.weather_info, .weather_details {
+    background: var(--dark_bg);
+    width: 30vw;
+    height: 60vh;
+}
