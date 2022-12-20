@@ -18,7 +18,7 @@ const wind = document.querySelector(".wind_info");
 async function getWeatherData(location = 'London') {
   console.log(location);
   const response = await fetch(
-    `http://api.openweathermap.org/data/2.5/weather?q=${location.trim()}&APPID=${API_key}`,
+    `https://api.openweathermap.org/data/2.5/weather?q=${location.trim()}&APPID=${API_key}`,
     { mode: "cors" }
   );
   if (response.status == "404") {
