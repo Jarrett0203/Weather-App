@@ -2,5 +2,9 @@
   "devDependencies": {
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {
+    "all-the-cities": "^3.1.0",
+    "date-fns": "^2.29.3"
   }
 }

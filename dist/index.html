@@ -7,16 +7,53 @@
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
+    <script src="https://kit.fontawesome.com/8b43bc9ee2.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="main">
         <div class="weather_info">
+            <p class="description"></p>
+            <p class="city"></p>
+            <p class="time"></p>
             <p class="temp"></p>
+            <img class="overall" src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather_icon">
+            <div class="search_box">
+                <input type="text" class="search" placeholder="Search Location...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="error-msg hidden">
+                Location not found.
+            </div>
         </div>
         <div class="weather_details">
-            <div class="feels_like"></div>
-            <div class="humidity"></div>
-            <div class="wind"></div>
+            <div class="feels_like">
+                <i class="fa-solid fa-temperature-three-quarters fa-3x"></i>
+                <div class="info">
+                    <p class="label">Feels Like</p>
+                    <p class="feels_like_info"></p>
+                </div>
+            </div>
+            <div class="humidity">
+                <i class="fa-solid fa-fire-flame-curved fa-3x"></i>
+                <div class="info">
+                    <p class="label">Humidity</p>
+                    <p class="humidity_info"></p>
+                </div>
+            </div>
+            <div class="pressure">
+                <i class="fa-solid fa-arrows-down-to-line fa-3x"></i>
+                <div class="info">
+                    <p class="label">Pressure</p>
+                    <p class="pressure_info"></p>
+                </div>
+            </div>
+            <div class="wind">
+                <i class="fa-solid fa-wind fa-3x"></i>
+                <div class="info">
+                    <p class="label">Wind Speed</p>
+                    <p class="wind_info"></p>
+                </div>
+            </div>
         </div>
     </div>
     <div class="forecast"></div>
